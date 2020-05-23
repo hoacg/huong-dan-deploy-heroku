@@ -37,7 +37,7 @@ Cách làm:
 
 Ví dụ như hình bên dưới:
 
-![image-20200523233716061](_img/Deploy dự án Spring MVC (Maven)/image-20200523233716061.png)
+![image-20200523233716061](_img/image-20200523233716061.png)
 
 ## Bước 3 - Sử dụng webapp-runner trong Maven
 
