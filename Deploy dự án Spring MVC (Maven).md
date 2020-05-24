@@ -1,8 +1,16 @@
 # Deploy dự án Spring MVC (Maven)
 
+## Chuẩn bị dự án
+
+Tạo app mới trên Heroku và thực hiện lệnh sau để gán remote heroku vào git của dự án:
+
+```bash
+$ heroku git:remote -a <tên-app-vừa-tạo>
+```
+
 ## Bước 1 - Sử dụng biến môi trường
 
-Sửa mã nguồn trong `dataSource()` như sau:
+Để có thể lấy thông tin kết nối cơ sở dữ liệu từ biến môi trường, hãy viết mã `dataSource()` như ví dụ dưới đây:
 
 ```java
 @Autowired
@@ -85,12 +93,6 @@ web: java $JAVA_OPTS -jar target/dependency/webapp-runner.jar --port $PORT targe
 ```
 
 ## Bước 5 - Deploy
-
-Tạo app mới trên Heroku và thực hiện lệnh sau để thêm remote heroku vào Git dự án:
-
-```bash
-$ heroku git:remote -a <tên-app-vừa-tạo>
-```
 
 Chạy lệnh `git push heroku master` để đưa các thay đổi ở các bước trên lên Heroku.
 
